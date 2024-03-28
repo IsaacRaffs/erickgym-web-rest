@@ -25,7 +25,6 @@ async function iniciarModificarAluno(id) {
 
         cx_nome.value = nome
         cx_sexo.value = sexo
-        console.log(sexo)
         cx_dt_nasc.value = dt_nasc
         cx_telefone.value = telefone
         cx_cpf.value = cpf
@@ -58,7 +57,6 @@ async function modificarAluno(id) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(dados),
-        duplex: true
     }
 
 
@@ -80,8 +78,7 @@ async function apagarAluno(id){
         method: 'DELETE',
         headers: {
             'Content-Type': 'applications/json'
-        },
-        duplex: true
+        }
     }
 
     await fetch(`${API_URL}${id}`, config).then(response => {
