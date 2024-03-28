@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-*jsuhv2qe_8!l@ppqjx%xqa9d%dd!1u@f&yuj)^hnfwdb_vj9v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://erickgym-web-rest.onrender.com/alunos/']
 #
-CORS_ALLOWED_ORIGINS = ['http://127.0.0.1:5500']
+CORS_ALLOWED_ORIGINS = ['https://erickgym-web-rest.onrender.com']
 
 
 # Application definition

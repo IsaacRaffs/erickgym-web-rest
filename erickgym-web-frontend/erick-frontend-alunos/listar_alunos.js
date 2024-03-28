@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:8000/alunos/'
+const API_URL = 'https://erickgym-web-rest.onrender.com/alunos/'
 
 const cx_nome = document.getElementById('cx-nome')
 const cx_sexo = document.getElementById('cx-sexo')
