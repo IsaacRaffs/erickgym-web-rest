@@ -23,7 +23,7 @@ class ListCreateAlunos(APIView):
 
 class DetailUpdateDeleteAlunos(APIView):
     def get(self, request, pk):
-        alunos = Alunos.objects.all()
+        alunos = Alunos.objects.get(pk)
         serializer = AlunoSerializer(alunos, many=True)
         return Response(serializer.data, status=200)
 
