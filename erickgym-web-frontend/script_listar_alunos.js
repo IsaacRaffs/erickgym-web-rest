@@ -57,7 +57,8 @@ async function modificarAluno(id) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(dados)
+        body: JSON.stringify(dados),
+        duplex: true
     }
 
 
@@ -79,7 +80,8 @@ async function apagarAluno(id){
         method: 'DELETE',
         headers: {
             'Content-Type': 'applications/json'
-        }
+        },
+        duplex: true
     }
 
     await fetch(`${API_URL}${id}`, config).then(response => {
