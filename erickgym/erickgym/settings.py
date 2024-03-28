@@ -28,7 +28,7 @@ DEBUG = True
 CSRF_TRUSTED_ORIGINS = ['https://erickgym-web-rest.onrender.com']
 ALLOWED_HOSTS = ['erickgym-web-rest.onrender.com']
 #
-CORS_ALLOWED_ORIGINS = ['http://127.0.0.1:5500', 'https://erickgym-web-rest-7knx.vercel.app']
+CORS_ALLOWED_ORIGINS = ['https://erickgym-web-rest-7knx.vercel.app']
 
 
 # Application definition
