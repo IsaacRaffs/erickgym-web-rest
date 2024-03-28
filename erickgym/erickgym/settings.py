@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-*jsuhv2qe_8!l@ppqjx%xqa9d%dd!1u@f&yuj)^hnfwdb_vj9v
 DEBUG = True
 
 ALLOWED_HOSTS = []
+#
+CORS_ALLOWED_ORIGINS = ['http://127.0.0.1:5500']
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'alunos',
 ]
@@ -44,6 +47,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -76,13 +80,15 @@ WSGI_APPLICATION = 'erickgym.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "erickgym_db_9kdn",
+        "USER": "admin",
+        "PASSWORD": "PMkyDtunYdcuPlDdOlYDlEWsVEfgsVG3",
+        "HOST": "dpg-co2b95mv3ddc739rvalg-a.oregon-postgres.render.com",
     }
 }
-
-
+# dpg-co2b95mv3ddc739rvalg-a.oregon-postgres.render.com
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 

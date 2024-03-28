@@ -4,4 +4,4 @@ from .models import Alunos
 class AlunoSerializer(ModelSerializer):
     class Meta:
         model = Alunos
-        fields = ['nome', 'foto', 'sexo', 'dt_nasc', 'dt_nasc', 'telefone', 'cpf']
+        fields = [ 'id','nome', 'sexo', 'dt_nasc', 'dt_nasc', 'telefone', 'cpf']

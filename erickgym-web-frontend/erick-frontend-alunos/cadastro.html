@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="cadastro.js" defer></script>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(30, 30, 255, 0.377);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            color: rgb(0, 0, 0);
+        }
+
+        main {
+            padding: 20px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+            background-color: rgb(0, 153, 255);
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        main form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        main form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        main form input,
+        main form select {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        main form button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        main form button:hover {
+            background-color: darkblue;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Alunos</h1>
+    </header>
+
+    <main>
+        <form action="">
+            <label for="cx-nome">Nome:</label>
+            <input id="cx-nome" type="text" required>
+            
+            <label for="cx-sexo">Sexo:</label>
+            <select id="cx-sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            
+            <label for="cx-dt_nasc">Data de Nascimento:</label>
+            <input id="cx-dt_nasc" type="date" required>
+            
+            <label for="cx-telefone">Telefone:</label>
+            <input id="cx-telefone" type="tel" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="99 99999-9999" required>
+            
+            <label for="cx-cpf">CPF:</label>
+            <input id="cx-cpf" type="text" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="999.999.999-99" required>
+            
+            <button type="submit" id="btnsalvar">Salvar</button>
+        </form>
+    </main>
+
+    <footer>
+        <a href="listar_alunos.html" target="_blank">Ver Lista de Alunos</a>
+    </footer>
+</body>
+</html>

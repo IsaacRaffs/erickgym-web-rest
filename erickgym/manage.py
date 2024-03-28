@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+sys.path.append('\\Users\\\isaac\\Desktop\\erick-gym-web\\env\\Lib\\site-packages\\')
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'erickgym.settings')
