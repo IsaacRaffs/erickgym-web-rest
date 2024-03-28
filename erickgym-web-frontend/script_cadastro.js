@@ -32,6 +32,9 @@ async function salvar_alunos(e){
     console.log(response.status)
     if(response.status===201){
         cx_nome.value = ''
+        cx_dt_nasc.value = ''
+        cx_telefone.value = ''
+        cx_cpf.value = ''
         alert('deu certo')
     }else{
         alert('deu errado')
