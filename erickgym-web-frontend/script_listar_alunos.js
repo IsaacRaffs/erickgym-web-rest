@@ -13,6 +13,7 @@ function main(){
 async function iniciarModificarAluno(id) {
     console.log(id)
     let response = await fetch(`${API_URL}${id}`)
+    console.log(response.status)
     if (response.status === 200) {
 
         const aluno = await response.json()

@@ -26,9 +26,10 @@ SECRET_KEY = 'django-insecure-*jsuhv2qe_8!l@ppqjx%xqa9d%dd!1u@f&yuj)^hnfwdb_vj9v
 DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = ['https://erickgym-web-rest.onrender.com']
+
 ALLOWED_HOSTS = ['erickgym-web-rest.onrender.com']
 #
-CORS_ALLOWED_ORIGINS = ['https://erickgym-web-rest-7knx.vercel.app']
+CORS_ALLOWED_ORIGINS = ['https://erickgym-web-rest.vercel.app']
 
 
 # Application definition
